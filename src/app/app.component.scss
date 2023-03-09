@@ -1,0 +1,233 @@
+.mat-drawer-container {
+    height: 100vh;
+  }
+  
+  mat-toolbar,
+  mat-toolbar-row {
+    min-height: 56px !important;
+    height: 56px !important;
+  }
+  
+  .menuIcon {
+    cursor: pointer;
+    margin-right: 16px;
+  }
+  
+  mat-drawer-container {
+    height: 100vh !important;
+  }
+  
+  .sidenav {
+    width: fit-content;
+  }
+  
+  .menuHeader {
+    position: relative;
+    left: -36px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuItem {
+    display: flex;
+    align-items: center;
+    // margin-right: 48px;
+    height: 56px;
+    border: none;
+    border-radius: 0.375rem;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(67,89,113,.04);
+    }
+  }
+  
+  .subMenu {
+    display: none;
+    li {
+      display: list-item;
+      list-style-type: disc;
+    }
+    transition-duration: .3s;
+  }
+  
+  .routerContainer {
+    padding-top: 16px;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+  
+  .myToolbar {
+      height: 3.875rem !important;
+      width: calc(100% - (1.625rem * 2));
+      margin: .75rem auto 0;
+      border-radius: 0.375rem;
+      padding: 0 1.5rem;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center;
+  }
+  
+  .toolbarComponents {
+      display: flex;
+      align-items: center;
+  }
+  
+  .toolbarRightElements {
+      position: absolute;
+      right: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
+  
+  .toolbarAvatar {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 100%;
+      border: none !important;
+  }
+  
+  .searchButtonToolbar {
+    width: fit-content;
+  
+    span {
+      font-size: 12px !important;
+      color: rgba(0, 0, 0, 0.4) !important;
+    }
+  }
+  
+  .searchBarComponents { 
+      display: flex;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .searchInputFieldToolbar {
+      width: 100%;
+      border: none;
+  
+      &:focus-visible {
+          outline: none;
+          border: none;
+      }
+  }
+  
+  .gridDropDown {
+      position: relative;
+      display: flex !important;
+  }
+  
+  .shortcutsContainer {
+      display: none;
+      position: absolute;
+      min-width: 22rem;
+      overflow: hidden;
+      right: 0;
+      left: auto;
+      height: fit-content;
+      width: 200px;
+      margin-top: 24px !important;
+      border-radius: 0.375rem !important;
+  }
+  
+  .shortcutsHeader {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #D9DEE2;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  
+  .shortcutsRow {
+      display: flex;
+      border-bottom: 1px solid #D9DEE2;
+  }
+  
+  .shortcutElement {
+      padding: 1.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+  
+      &:hover {
+          cursor: pointer;
+          background-color: #F8F8F9 !important;
+      }
+  }
+  
+  .plusButton {
+      &:hover {
+          cursor: pointer;
+          color: #5f61e6 !important;
+      }
+  }
+  
+  .show {
+      display: block !important;
+  }
+  
+  .d-none {
+      display: none !important;
+  }
+  
+  
+  
+  // .mat-mdc-fab.mat-accent, .mat-mdc-mini-fab.mat-accent {
+  //   --mdc-fab-container-color: #6200ee;
+  // }
+  
+  
+  
+  
+  
+  // OBSOLETE
+  /*
+  .sideNavLogoImage {
+    height: -webkit-fill-available;
+    // width:  -webkit-fill-available;
+    object-fit: contain;
+  }
+  
+  .logoContainer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 56px !important;
+    height: 56px !important;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .menuItems {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  
+    li {
+      padding-left: 16px;
+      padding-right: 16px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+      mat-icon {
+        margin-right: 16px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  */
