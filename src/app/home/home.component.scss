@@ -1,0 +1,13 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    background: url('./../../assets/img/treasure_big_open.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 78vh;
+    padding-top: 8px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: #ffff;
+}
