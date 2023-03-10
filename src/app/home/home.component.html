@@ -1,5 +1,5 @@
 <div class="homeContainer">
-  <h1>Herzlich Willkommen auf dieser Webseite, Schalom!
+  <!-- <h1>Herzlich Willkommen auf dieser Webseite, Schalom!
     <br>Was erwartet uns hier?
   </h1>
 
@@ -20,7 +20,66 @@
     <br>mit vielen Anlehnungen zum Hebräisch und den Zeitangaben nach Michael Roods Chronologie zum biblischen Kalender
     über den einzelnen Ereignissen eingearbeitet; und viele zusätzliche
     <br>Kommentare nach den neusten Erkenntnissen.
-  </p>
+  </p> -->
 
+  <div id="videos-container" class="videosContainer">
+    <button class="videoButton" (click)="previousVideo()">Previous</button>
+    <youtube-player videoId="{{ videoId }}" [height]="400" [width]="600"></youtube-player>
+    <button class="videoButton" (click)="nextVideo()">Next</button>
+  </div>
+  <!-- <button id="upload-button" class="addButton" (click)="openLogin()">Hochladen</button> -->
+
+  <!-- <div id="upload-frame" class="uploadFrame d-none">
+    <form onsubmit="return false">
+      <input id="url" class="submitInput" type="text" placeholder="Link zum Video" required />
+      <input class="submitButton" type="submit" value="Submit" (click)="submitURL()"/>
+    </form>
+  </div> -->
   
+  <!-- ------------------------------------------------------------------------------------ -->
+  <!-- <div id="login-window" class="limiter loginMainContainer d-none">
+    <div class="container-login100">
+      <div class="skipContainer">
+          <span>Sollten Sie einfach Gast sein, klicken Sie hier einfach auf den Button "Skip"</span>
+          <button (click)="closeLogin()">Skip</button>
+      </div>
+      <div class="wrap-login100">
+        <div class="login100-pic js-tilt" data-tilt>
+          <img src="./../../assets/loginData/images/img-01.png" alt="IMG" />
+        </div>
+  
+        <form class="login100-form validate-form" onsubmit="return false">
+          <span class="login100-form-title"> Member Login </span>
+          <div class="wrap-input100 validate-input" data-validate="Password is required">
+            <input id="password-input" class="input100" type="password" name="pass" placeholder="Password"/>
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+            </span>
+          </div>
+  
+          <div class="container-login100-form-btn">
+            <button class="login100-form-btn" (click)="checkPassword()">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> -->
+  
+  <!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/tilt/tilt.jquery.min.js"></script>
+  <script>
+    $(".js-tilt").tilt({
+      scale: 1.1,
+    });
+  </script>
+  <!--===============================================================================================-->
+  <script src="js/main.js"></script>  
 </div>
