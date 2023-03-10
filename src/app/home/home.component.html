@@ -1,32 +1,45 @@
 <div class="homeContainer">
-  <!-- <h1>Herzlich Willkommen auf dieser Webseite, Schalom!
-    <br>Was erwartet uns hier?
-  </h1>
-
-  <h1>Bibel-Texte des TaNa'Ch</h1>
-  <p>in hebräischem Urtext mit 3 deutschen Übersetzungen:
-    Elberfelder, Martin Buber / Franz Rosenzweig, TurSinaj
-  </p>
-
-  <br><h1 style="text-align: center;">Die Evangelien im jüdisch-hebräischen Kontext und
-    <br>Jeschuas öffentlicher Dienst im chronologischen Zeitablauf
-    von einem Jahr bzw. 70 Wochen
-  </h1>
-
-  <p style="text-align: center; margin-top: -16px;">Nach<b>Michael Rood</b> übersetzt aus dem Englischen, aber noch erweitert ausgearbeitet:
-    <br>in Anlehnung zur hebräischen Übersetzung von<b>Isaac Salkinson</b>.</p>
-
-  <p style="text-align: center;">Die Evangelien in hebräisch (Isaac Salkinson) und eine deutsche, überarbeitete Übersetzung in heutigem deutsche
-    <br>mit vielen Anlehnungen zum Hebräisch und den Zeitangaben nach Michael Roods Chronologie zum biblischen Kalender
-    über den einzelnen Ereignissen eingearbeitet; und viele zusätzliche
-    <br>Kommentare nach den neusten Erkenntnissen.
-  </p> -->
-
-  <div id="videos-container" class="videosContainer">
+  <div class="introductionVideo">
+    <youtube-player class="youTubePlayerTag" videoId="{{ introVideo }}" [height]="400" [width]="600"></youtube-player>
+  </div>
+  <div class="secondContainer h-100vh">
+    <img class="backgroundImage z-0" src="./../../assets/img/treasure_istockphoto.jpeg">
+    <div class="mainText z-1">
+      <h1>Herzlich Willkommen auf dieser Webseite, Schalom!
+        <br>Was erwartet uns hier?
+      </h1>
+  
+      <h1>Bibel-Texte des TaNa'Ch</h1>
+      <p>in hebräischem Urtext mit 3 deutschen Übersetzungen:
+        Elberfelder, Martin Buber / Franz Rosenzweig, TurSinaj
+      </p>
+  
+      <br><h1>Die Evangelien im jüdisch-hebräischen Kontext und
+      <br>Jeschuas öffentlicher Dienst im chronologischen Zeitablauf
+      von einem Jahr bzw. 70 Wochen
+      </h1>
+  
+      <p>Nach<b>Michael Rood</b> übersetzt aus dem Englischen, aber noch erweitert ausgearbeitet:
+      <br>in Anlehnung zur hebräischen Übersetzung von<b>Isaac Salkinson</b>.</p>
+  
+      <p>Die Evangelien in hebräisch (Isaac Salkinson) und eine deutsche, überarbeitete Übersetzung in heutigem deutsche
+      <br>mit vielen Anlehnungen zum Hebräisch und den Zeitangaben nach Michael Roods Chronologie zum biblischen Kalender
+      über den einzelnen Ereignissen eingearbeitet; und viele zusätzliche
+      <br>Kommentare nach den neusten Erkenntnissen.
+      </p>
+    </div>
+    
+  </div>
+  
+  <div id="videos-container" class="videosContainer z-1">
     <button class="videoButton" (click)="previousVideo()">Previous</button>
-    <youtube-player videoId="{{ videoId }}" [height]="400" [width]="600"></youtube-player>
+    <youtube-player class="youTubePlayerTag" videoId="{{ videoId }}" [height]="400" [width]="600"></youtube-player>
     <button class="videoButton" (click)="nextVideo()">Next</button>
   </div>
+
+  
+
+  
   <!-- <button id="upload-button" class="addButton" (click)="openLogin()">Hochladen</button> -->
 
   <!-- <div id="upload-frame" class="uploadFrame d-none">
@@ -83,3 +96,4 @@
   <!--===============================================================================================-->
   <script src="js/main.js"></script>  
 </div>
+

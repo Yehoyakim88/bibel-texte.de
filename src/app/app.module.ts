@@ -30,6 +30,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatRadioModule} from '@angular/material/radio';
 import { HomeComponent } from './home/home.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { HttpClientModule } from '@angular/common/http';
+// import { HttpModule } from '@angular/http';
+// import { HttpClient } from '@angular/common/http';
 
 
 
@@ -68,7 +71,8 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     MatCardModule,
     MatMenuModule,
     MatRadioModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

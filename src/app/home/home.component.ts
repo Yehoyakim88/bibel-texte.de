@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   index: number = 0;
+  introVideo: string = 'XiS224hhL30';
   videoIds: string[] = [];
   videoId: string;
   givenPassword: boolean;
@@ -25,14 +26,17 @@ export class HomeComponent implements OnInit {
   }
 
   constructor(private http: HttpClient) {
+    console.log('constructor');
     this.videoId = this.videoIds[this.index];
     this.givenPassword = false;
     this.getJSON().subscribe((data) => {
       console.log(data);
     });
+    console.log('after getJSON()');
   }
 
   public getJSON(): Observable<any> {
+    console.log('calling getJSON');
     return this.http.get('./../../assets/database.json');
   }
 
@@ -43,12 +47,14 @@ export class HomeComponent implements OnInit {
 
 
   nextVideo() {
+    console.log('Clicked Button nextVideo');
     this.index++;
     this.index = this.index % this.videoIds.length;
     this.videoId = this.videoIds[this.index];
   }
 
   previousVideo() {
+    console.log('clicked button previousVideo');
     this.index = (this.index + this.videoIds.length - 1) % this.videoIds.length;
     this.videoId = this.videoIds[this.index];
     console.log(this.index);
